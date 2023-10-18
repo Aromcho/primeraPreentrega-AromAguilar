@@ -1,0 +1,79 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+*{
+    font-family: 'Young Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    background: linear-gradient( 45deg, rgb(252, 200, 226), rgb(86, 207, 207),rgb(255, 227, 190) ,rgb(228, 128, 231));
+    background-size: 400% 400%;
+    position: relative;
+    animation: cambiar 10s ease-in-out infinite;
+
+}
+header {
+    width: 100vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+section {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    width: 100vw;
+    height: 75vh;
+}
+.aplicacion {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+}
+
+.app {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100px;
+    height: 100px;
+    background-color: rgba(128, 128, 128, 0.315);
+    border-radius: 10px;
+    
+}
+.app:hover {
+    width: 110px;
+    height: 110px;
+    transition: .1s;
+}
+h1 {
+    animation: mover 8s infinite cubic-bezier(0.86, 0, 0.07, 1);
+    font-family: 'Young Serif', serif;
+    font-size: 70px ;
+    color: rgb(49, 57, 58);
+}
+h2 {
+    color: rgb(49, 57, 58);
+
+}
+.calcu {
+    width: 70px;
+}
+@keyframes cambiar {
+    0%{background-position: 0 50%;}
+    50%{background-position: 100% 50%;}
+    100%{background-position: 50% ;}
+}
+@keyframes mover {
+    0% {transform: translate(00px);}
+    20% {transform: translate(340px);}
+    40% {transform: translate(340px,100px);}
+    60% {transform: translate(-340px,100px);}
+    80% {transform: translate(-340px);}
+
+}

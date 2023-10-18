@@ -1,0 +1,65 @@
+@import url('https://fonts.googleapis.com/css2?family=Young+Serif&display=swap');
+* {
+    font-family: 'Young Serif', serif;
+    margin: 0;
+    padding: 0;
+}
+body {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+main {
+    width: 600px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-shadow: 0 10px 30px #000;
+    border: 1px solid #ffffff40;
+    border-radius: 10px;
+    
+}
+.transparente {
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    background-color: rgba(243,243,243,0.2);
+    
+
+}
+section {
+    gap:10px;
+    width: 30%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.barrita {
+    width: 300px;
+}
+.selector{
+    width: 60%;
+    height: 30px;
+    border-radius: 5px;
+    border: 2px solid rgb(52, 122, 131);
+    background-color: rgba(15, 36, 39, 0.623);
+    color: white;
+}
+video {
+    width: 100%;
+    position: fixed;
+    min-width: 100%;
+    min-height: 100%;
+    top:50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+    z-index: -1;
+}
+h2 {
+    text-align: center;
+    width: 300px;
+}
